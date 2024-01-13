@@ -1,3 +1,7 @@
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('we are connected!!!');  
-}); 
+document.addEventListener('DOMContentLoaded', () => fetchData) 
+
+function fetchData() {
+    fetch('url')
+    .then((resp) => resp.json())
+    .then((data) => console.log(data))
+}
